@@ -9,8 +9,13 @@ $items = [
 */
 require_once 'DbManager.php';
 
+/*
+ データベースと接続したり、SQL文に誤りがあると例外が発生するので
+ 例外処理を行う。
+*/
 try {
-    $db = getDb();
+    $db = getDb(); // データベースと接続
+    // SQLの準備
     $sql = "SELECT K.日付,H.費目名,K.メモ,K.入金額,K.出金額
             FROM 家計簿 AS K
                 INNER JOIN 費目 AS H ON K.費目id = H.id

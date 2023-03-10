@@ -4,6 +4,7 @@
  echoやprintを練習するのが目的
 
  作成者: 山田太郎
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +15,10 @@
     <title>Document</title>
 </head>
 <body>
+    <!--<h2>printの練習</h2>-->
    <?php
-   print("こんにちは、世界！<br>");
-   print('こんにちは、PHP！<br>');
    $name = '山田太郎';
+   print("こんにちは、{$name}さん！<br>");
    $age = 28;
    print("{$name}さんの年齢は{$age}歳です。<br>"); // 変数展開
    print('{$name}さんの年齢は{$age}歳です。<br>');
