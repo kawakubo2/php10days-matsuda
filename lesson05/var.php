@@ -8,10 +8,11 @@
 </head>
 <body>
 <?php
-$x = 10;
-$y = 5;
-print($x . '+' . $y . '=' . ($x + $y) . '<br>');
+$x = $_POST['x'];
+$y = $_POST['y'];
 print($x . '×' . $y . '=' . ($x * $y) . '<br>');
 ?>
+<br>
+<a href="var_form.php">戻る</a>
 </body>
 </html>
