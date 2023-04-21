@@ -23,11 +23,12 @@ foreach ($numbers as $num) {
 }
 print('<br>');
 
-print('---< 合計をもとめる >---<br>');
 $total = 0;
+print('---< 合計をもとめる >---<br>');
 foreach ($numbers as $num) {
     $total += $num; // $total = $total + $num
 }
+
 print("合計: {$total}<br>");
 $total = 0;
 print('---< 偶数だけの合計 >---<br>');
